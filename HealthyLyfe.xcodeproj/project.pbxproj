@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		096D3EBE9C63100C25294851 /* Pods_HealthyLyfe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4C9610A869CFDDFCF9B7DD /* Pods_HealthyLyfe.framework */; };
+		0A091B5CE353CA528242E971 /* Pods_HealthyLyfeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908F52F2BA691F33B42346A /* Pods_HealthyLyfeTests.framework */; };
+		7DE9684D2524427D009173FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9684C2524427D009173FE /* AppDelegate.swift */; };
+		7DE968512524427D009173FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE968502524427D009173FE /* ViewController.swift */; };
+		7DE968562524427F009173FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE968552524427F009173FE /* Assets.xcassets */; };
+		7DE968592524427F009173FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE968572524427F009173FE /* LaunchScreen.storyboard */; };
+		7DE968642524427F009173FE /* HealthyLyfeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE968632524427F009173FE /* HealthyLyfeTests.swift */; };
+		7DE9686F2524427F009173FE /* HealthyLyfeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9686E2524427F009173FE /* HealthyLyfeUITests.swift */; };
+		7DE9689625244586009173FE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9689525244586009173FE /* DataService.swift */; };
+		A1EF550F940989A285F07DC1 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FF078ABD83B5CFA7976056 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DE968602524427F009173FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DE968412524427D009173FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DE968482524427D009173FE;
+			remoteInfo = HealthyLyfe;
+		};
+		7DE9686B2524427F009173FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DE968412524427D009173FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DE968482524427D009173FE;
+			remoteInfo = HealthyLyfe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0908F52F2BA691F33B42346A /* Pods_HealthyLyfeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		648C90C638842D41FA7E6EBA /* Pods-HealthyLyfeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfeTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLyfeTests/Pods-HealthyLyfeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4C9610A869CFDDFCF9B7DD /* Pods_HealthyLyfe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4FC65769A0458E820937C7 /* Pods-HealthyLyfe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe.release.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe.release.xcconfig"; sourceTree = "<group>"; };
+		7DE968492524427D009173FE /* HealthyLyfe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLyfe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE9684C2524427D009173FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DE968502524427D009173FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DE968552524427F009173FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DE968582524427F009173FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DE9685A2524427F009173FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE9685F2524427F009173FE /* HealthyLyfeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyLyfeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE968632524427F009173FE /* HealthyLyfeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLyfeTests.swift; sourceTree = "<group>"; };
+		7DE968652524427F009173FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE9686A2524427F009173FE /* HealthyLyfeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyLyfeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE9686E2524427F009173FE /* HealthyLyfeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLyfeUITests.swift; sourceTree = "<group>"; };
+		7DE968702524427F009173FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE9689525244586009173FE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		83FF078ABD83B5CFA7976056 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfe_HealthyLyfeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A1F73CCEB3699B058AD3DA /* Pods-HealthyLyfe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe.debug.xcconfig"; sourceTree = "<group>"; };
+		BA1C819EE20A314530742C19 /* Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D671726347BC617C4661A60B /* Pods-HealthyLyfe-HealthyLyfeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe-HealthyLyfeUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA37FAE8EB8D0B881E1262C3 /* Pods-HealthyLyfeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfeTests.release.xcconfig"; path = "Target Support Files/Pods-HealthyLyfeTests/Pods-HealthyLyfeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DE968462524427D009173FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D3EBE9C63100C25294851 /* Pods_HealthyLyfe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE9685C2524427F009173FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A091B5CE353CA528242E971 /* Pods_HealthyLyfeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE968672524427F009173FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1EF550F940989A285F07DC1 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F01D7361716F6CF05E4D45D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D4C9610A869CFDDFCF9B7DD /* Pods_HealthyLyfe.framework */,
+				83FF078ABD83B5CFA7976056 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework */,
+				0908F52F2BA691F33B42346A /* Pods_HealthyLyfeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DE968402524427D009173FE = {
+			isa = PBXGroup;
+			children = (
+				7DE9684B2524427D009173FE /* HealthyLyfe */,
+				7DE968622524427F009173FE /* HealthyLyfeTests */,
+				7DE9686D2524427F009173FE /* HealthyLyfeUITests */,
+				7DE9684A2524427D009173FE /* Products */,
+				9145504A6867D4C716B31C03 /* Pods */,
+				2F01D7361716F6CF05E4D45D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7DE9684A2524427D009173FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DE968492524427D009173FE /* HealthyLyfe.app */,
+				7DE9685F2524427F009173FE /* HealthyLyfeTests.xctest */,
+				7DE9686A2524427F009173FE /* HealthyLyfeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DE9684B2524427D009173FE /* HealthyLyfe */ = {
+			isa = PBXGroup;
+			children = (
+				7DE9689425244563009173FE /* network */,
+				7DE9684C2524427D009173FE /* AppDelegate.swift */,
+				7DE968502524427D009173FE /* ViewController.swift */,
+				7DE968552524427F009173FE /* Assets.xcassets */,
+				7DE968572524427F009173FE /* LaunchScreen.storyboard */,
+				7DE9685A2524427F009173FE /* Info.plist */,
+			);
+			path = HealthyLyfe;
+			sourceTree = "<group>";
+		};
+		7DE968622524427F009173FE /* HealthyLyfeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DE968632524427F009173FE /* HealthyLyfeTests.swift */,
+				7DE968652524427F009173FE /* Info.plist */,
+			);
+			path = HealthyLyfeTests;
+			sourceTree = "<group>";
+		};
+		7DE9686D2524427F009173FE /* HealthyLyfeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DE9686E2524427F009173FE /* HealthyLyfeUITests.swift */,
+				7DE968702524427F009173FE /* Info.plist */,
+			);
+			path = HealthyLyfeUITests;
+			sourceTree = "<group>";
+		};
+		7DE9689425244563009173FE /* network */ = {
+			isa = PBXGroup;
+			children = (
+				7DE9689525244586009173FE /* DataService.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		9145504A6867D4C716B31C03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1F73CCEB3699B058AD3DA /* Pods-HealthyLyfe.debug.xcconfig */,
+				7D4FC65769A0458E820937C7 /* Pods-HealthyLyfe.release.xcconfig */,
+				D671726347BC617C4661A60B /* Pods-HealthyLyfe-HealthyLyfeUITests.debug.xcconfig */,
+				BA1C819EE20A314530742C19 /* Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig */,
+				648C90C638842D41FA7E6EBA /* Pods-HealthyLyfeTests.debug.xcconfig */,
+				FA37FAE8EB8D0B881E1262C3 /* Pods-HealthyLyfeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DE968482524427D009173FE /* HealthyLyfe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DE968732524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfe" */;
+			buildPhases = (
+				C5A9295CA77678796D0A4F8D /* [CP] Check Pods Manifest.lock */,
+				7DE968452524427D009173FE /* Sources */,
+				7DE968462524427D009173FE /* Frameworks */,
+				7DE968472524427D009173FE /* Resources */,
+				E5E19F84C3BF5DD5FF6716E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthyLyfe;
+			productName = HealthyLyfe;
+			productReference = 7DE968492524427D009173FE /* HealthyLyfe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DE9685E2524427F009173FE /* HealthyLyfeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DE968762524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfeTests" */;
+			buildPhases = (
+				0C5C7E021752228F4E6B9A86 /* [CP] Check Pods Manifest.lock */,
+				7DE9685B2524427F009173FE /* Sources */,
+				7DE9685C2524427F009173FE /* Frameworks */,
+				7DE9685D2524427F009173FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DE968612524427F009173FE /* PBXTargetDependency */,
+			);
+			name = HealthyLyfeTests;
+			productName = HealthyLyfeTests;
+			productReference = 7DE9685F2524427F009173FE /* HealthyLyfeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DE968692524427F009173FE /* HealthyLyfeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DE968792524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfeUITests" */;
+			buildPhases = (
+				1B10157B718F502D060438E3 /* [CP] Check Pods Manifest.lock */,
+				7DE968662524427F009173FE /* Sources */,
+				7DE968672524427F009173FE /* Frameworks */,
+				7DE968682524427F009173FE /* Resources */,
+				B38F5F2E427163574E82ACAD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DE9686C2524427F009173FE /* PBXTargetDependency */,
+			);
+			name = HealthyLyfeUITests;
+			productName = HealthyLyfeUITests;
+			productReference = 7DE9686A2524427F009173FE /* HealthyLyfeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DE968412524427D009173FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7DE968482524427D009173FE = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					7DE9685E2524427F009173FE = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7DE968482524427D009173FE;
+					};
+					7DE968692524427F009173FE = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7DE968482524427D009173FE;
+					};
+				};
+			};
+			buildConfigurationList = 7DE968442524427D009173FE /* Build configuration list for PBXProject "HealthyLyfe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DE968402524427D009173FE;
+			productRefGroup = 7DE9684A2524427D009173FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DE968482524427D009173FE /* HealthyLyfe */,
+				7DE9685E2524427F009173FE /* HealthyLyfeTests */,
+				7DE968692524427F009173FE /* HealthyLyfeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DE968472524427D009173FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE968592524427F009173FE /* LaunchScreen.storyboard in Resources */,
+				7DE968562524427F009173FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE9685D2524427F009173FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE968682524427F009173FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C5C7E021752228F4E6B9A86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthyLyfeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B10157B718F502D060438E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthyLyfe-HealthyLyfeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B38F5F2E427163574E82ACAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A9295CA77678796D0A4F8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthyLyfe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E19F84C3BF5DD5FF6716E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DE968452524427D009173FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE9689625244586009173FE /* DataService.swift in Sources */,
+				7DE968512524427D009173FE /* ViewController.swift in Sources */,
+				7DE9684D2524427D009173FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE9685B2524427F009173FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE968642524427F009173FE /* HealthyLyfeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE968662524427F009173FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE9686F2524427F009173FE /* HealthyLyfeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DE968612524427F009173FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DE968482524427D009173FE /* HealthyLyfe */;
+			targetProxy = 7DE968602524427F009173FE /* PBXContainerItemProxy */;
+		};
+		7DE9686C2524427F009173FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DE968482524427D009173FE /* HealthyLyfe */;
+			targetProxy = 7DE9686B2524427F009173FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DE968572524427F009173FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DE968582524427F009173FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DE968712524427F009173FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DE968722524427F009173FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DE968742524427F009173FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A1F73CCEB3699B058AD3DA /* Pods-HealthyLyfe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TC988K6YG;
+				INFOPLIST_FILE = HealthyLyfe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DE968752524427F009173FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4FC65769A0458E820937C7 /* Pods-HealthyLyfe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TC988K6YG;
+				INFOPLIST_FILE = HealthyLyfe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7DE968772524427F009173FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648C90C638842D41FA7E6EBA /* Pods-HealthyLyfeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TC988K6YG;
+				INFOPLIST_FILE = HealthyLyfeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthyLyfe.app/HealthyLyfe";
+			};
+			name = Debug;
+		};
+		7DE968782524427F009173FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA37FAE8EB8D0B881E1262C3 /* Pods-HealthyLyfeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TC988K6YG;
+				INFOPLIST_FILE = HealthyLyfeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthyLyfe.app/HealthyLyfe";
+			};
+			name = Release;
+		};
+		7DE9687A2524427F009173FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D671726347BC617C4661A60B /* Pods-HealthyLyfe-HealthyLyfeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TC988K6YG;
+				INFOPLIST_FILE = HealthyLyfeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthyLyfe;
+			};
+			name = Debug;
+		};
+		7DE9687B2524427F009173FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA1C819EE20A314530742C19 /* Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TC988K6YG;
+				INFOPLIST_FILE = HealthyLyfeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthyLyfe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DE968442524427D009173FE /* Build configuration list for PBXProject "HealthyLyfe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE968712524427F009173FE /* Debug */,
+				7DE968722524427F009173FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DE968732524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE968742524427F009173FE /* Debug */,
+				7DE968752524427F009173FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DE968762524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE968772524427F009173FE /* Debug */,
+				7DE968782524427F009173FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DE968792524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE9687A2524427F009173FE /* Debug */,
+				7DE9687B2524427F009173FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DE968412524427D009173FE /* Project object */;
+}
