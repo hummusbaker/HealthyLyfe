@@ -11,11 +11,14 @@
 		0A091B5CE353CA528242E971 /* Pods_HealthyLyfeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908F52F2BA691F33B42346A /* Pods_HealthyLyfeTests.framework */; };
 		7D4E8764252582560013A3E5 /* UIColor+HealthyLyfe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E8763252582560013A3E5 /* UIColor+HealthyLyfe.swift */; };
 		7D4E8768252588740013A3E5 /* CGFloat+HealthyLyfe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E8767252588740013A3E5 /* CGFloat+HealthyLyfe.swift */; };
+		7D4E876E2525897E0013A3E5 /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E876D2525897E0013A3E5 /* TagTableViewCell.swift */; };
+		7D4E87722525898C0013A3E5 /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E87712525898C0013A3E5 /* TagViewModel.swift */; };
+		7D4E877A252596B20013A3E5 /* ArticleSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E8779252596B20013A3E5 /* ArticleSubject.swift */; };
 		7D7AA36A25257A7500533E8E /* ArticlePreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA36925257A7500533E8E /* ArticlePreviewCollectionViewCell.swift */; };
 		7D7AA37325257B2A00533E8E /* ArticlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA37225257B2A00533E8E /* ArticlePreviewViewModel.swift */; };
 		7D7AA37D25257BC800533E8E /* ViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA37C25257BC800533E8E /* ViewModelConfigurable.swift */; };
 		7DE9684D2524427D009173FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9684C2524427D009173FE /* AppDelegate.swift */; };
-		7DE968512524427D009173FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE968502524427D009173FE /* ViewController.swift */; };
+		7DE968512524427D009173FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE968502524427D009173FE /* HomeViewController.swift */; };
 		7DE968562524427F009173FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE968552524427F009173FE /* Assets.xcassets */; };
 		7DE968592524427F009173FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE968572524427F009173FE /* LaunchScreen.storyboard */; };
 		7DE968642524427F009173FE /* HealthyLyfeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE968632524427F009173FE /* HealthyLyfeTests.swift */; };
@@ -38,13 +41,16 @@
 		6D4C9610A869CFDDFCF9B7DD /* Pods_HealthyLyfe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4E8763252582560013A3E5 /* UIColor+HealthyLyfe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HealthyLyfe.swift"; sourceTree = "<group>"; };
 		7D4E8767252588740013A3E5 /* CGFloat+HealthyLyfe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+HealthyLyfe.swift"; sourceTree = "<group>"; };
+		7D4E876D2525897E0013A3E5 /* TagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
+		7D4E87712525898C0013A3E5 /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		7D4E8779252596B20013A3E5 /* ArticleSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSubject.swift; sourceTree = "<group>"; };
 		7D4FC65769A0458E820937C7 /* Pods-HealthyLyfe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe.release.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe.release.xcconfig"; sourceTree = "<group>"; };
 		7D7AA36925257A7500533E8E /* ArticlePreviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePreviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		7D7AA37225257B2A00533E8E /* ArticlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePreviewViewModel.swift; sourceTree = "<group>"; };
 		7D7AA37C25257BC800533E8E /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
 		7DE968492524427D009173FE /* HealthyLyfe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLyfe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE9684C2524427D009173FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DE968502524427D009173FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DE968502524427D009173FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7DE968552524427F009173FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE968582524427F009173FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DE9685A2524427F009173FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +107,7 @@
 		7D4E876B252589390013A3E5 /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				7D7AA36825257A5700533E8E /* articles */,
+				7D7AA36825257A5700533E8E /* articles preview */,
 				7D7AA367252579FB00533E8E /* home */,
 			);
 			path = screens;
@@ -110,6 +116,8 @@
 		7D4E876C252589560013A3E5 /* tags */ = {
 			isa = PBXGroup;
 			children = (
+				7D4E876D2525897E0013A3E5 /* TagTableViewCell.swift */,
+				7D4E87712525898C0013A3E5 /* TagViewModel.swift */,
 			);
 			path = tags;
 			sourceTree = "<group>";
@@ -117,17 +125,19 @@
 		7D7AA367252579FB00533E8E /* home */ = {
 			isa = PBXGroup;
 			children = (
+				7DE968502524427D009173FE /* HomeViewController.swift */,
 				7D4E876C252589560013A3E5 /* tags */,
 			);
 			path = home;
 			sourceTree = "<group>";
 		};
-		7D7AA36825257A5700533E8E /* articles */ = {
+		7D7AA36825257A5700533E8E /* articles preview */ = {
 			isa = PBXGroup;
 			children = (
 				7D7AA37125257B1800533E8E /* cell */,
+				7D4E8779252596B20013A3E5 /* ArticleSubject.swift */,
 			);
-			path = articles;
+			path = "articles preview";
 			sourceTree = "<group>";
 		};
 		7D7AA37125257B1800533E8E /* cell */ = {
@@ -175,7 +185,6 @@
 				7D7AA37B25257BC300533E8E /* interface */,
 				7DE9689425244563009173FE /* network */,
 				7DE9684C2524427D009173FE /* AppDelegate.swift */,
-				7DE968502524427D009173FE /* ViewController.swift */,
 				7DE968552524427F009173FE /* Assets.xcassets */,
 				7DE968572524427F009173FE /* LaunchScreen.storyboard */,
 				7DE9685A2524427F009173FE /* Info.plist */,
@@ -381,12 +390,15 @@
 			files = (
 				7DE9689625244586009173FE /* DataService.swift in Sources */,
 				7D7AA36A25257A7500533E8E /* ArticlePreviewCollectionViewCell.swift in Sources */,
-				7DE968512524427D009173FE /* ViewController.swift in Sources */,
+				7DE968512524427D009173FE /* HomeViewController.swift in Sources */,
+				7D4E876E2525897E0013A3E5 /* TagTableViewCell.swift in Sources */,
 				7D7AA37325257B2A00533E8E /* ArticlePreviewViewModel.swift in Sources */,
+				7D4E87722525898C0013A3E5 /* TagViewModel.swift in Sources */,
 				7DE9684D2524427D009173FE /* AppDelegate.swift in Sources */,
 				7D7AA37D25257BC800533E8E /* ViewModelConfigurable.swift in Sources */,
 				7D4E8768252588740013A3E5 /* CGFloat+HealthyLyfe.swift in Sources */,
 				7D4E8764252582560013A3E5 /* UIColor+HealthyLyfe.swift in Sources */,
+				7D4E877A252596B20013A3E5 /* ArticleSubject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

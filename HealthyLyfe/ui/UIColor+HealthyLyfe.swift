@@ -24,4 +24,12 @@ extension UIColor {
     static var appRed: UIColor {
         UIColor(named: "appRed") ?? .red
     }
+
+    static var appTeal: UIColor {
+        UIColor(named: "appTeal") ?? .purple
+    }
+
+    static var pageBackground: UIColor {
+        UIColor(named: "pageBackground") ?? .white
+    }
 }

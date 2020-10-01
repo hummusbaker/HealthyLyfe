@@ -14,10 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let browseViewController = ViewController()
+        let homeViewController = HomeViewController()
         let mainWindow = UIWindow(frame: UIScreen.main.bounds)
         mainWindow.backgroundColor = UIColor.white
-        mainWindow.rootViewController = UINavigationController(rootViewController: browseViewController)
+        mainWindow.rootViewController = UINavigationController(rootViewController: homeViewController)
 
         window = mainWindow
         window?.makeKeyAndVisible()

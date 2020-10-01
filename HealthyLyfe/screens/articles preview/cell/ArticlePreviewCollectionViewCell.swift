@@ -32,6 +32,8 @@ class ArticlePreviewCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
         imageView.kf.cancelDownloadTask()
         imageView.image = nil
+        titleLabel.text = nil
+        dateLabel.text = nil
     }
 
     deinit {
@@ -54,6 +56,7 @@ extension ArticlePreviewCollectionViewCell : ViewModelConfigurable {
 private extension ArticlePreviewCollectionViewCell {
 
     func setUp() {
+        backgroundColor = .pageBackground
         clipsToBounds = true
         layer.cornerRadius = .cornerRadius
 
@@ -69,6 +72,7 @@ private extension ArticlePreviewCollectionViewCell {
         }
 
         detailContentView.addSubview(dateLabel)
+        dateLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
         dateLabel.numberOfLines = 1
         dateLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(8)
@@ -77,6 +81,7 @@ private extension ArticlePreviewCollectionViewCell {
         }
 
         detailContentView.addSubview(titleLabel)
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         titleLabel.numberOfLines = 2
         titleLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(16)
