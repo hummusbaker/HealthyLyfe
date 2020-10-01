@@ -14,8 +14,4 @@ target 'HealthyLyfe' do
     inherit! :search_paths
   end
 
-  target 'HealthyLyfeUITests' do
-    # Pods for testing
-  end
-
 end

@@ -9,25 +9,21 @@
 /* Begin PBXBuildFile section */
 		096D3EBE9C63100C25294851 /* Pods_HealthyLyfe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4C9610A869CFDDFCF9B7DD /* Pods_HealthyLyfe.framework */; };
 		0A091B5CE353CA528242E971 /* Pods_HealthyLyfeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908F52F2BA691F33B42346A /* Pods_HealthyLyfeTests.framework */; };
+		7D4E8764252582560013A3E5 /* UIColor+HealthyLyfe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E8763252582560013A3E5 /* UIColor+HealthyLyfe.swift */; };
+		7D4E8768252588740013A3E5 /* CGFloat+HealthyLyfe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E8767252588740013A3E5 /* CGFloat+HealthyLyfe.swift */; };
+		7D7AA36A25257A7500533E8E /* ArticlePreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA36925257A7500533E8E /* ArticlePreviewCollectionViewCell.swift */; };
+		7D7AA37325257B2A00533E8E /* ArticlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA37225257B2A00533E8E /* ArticlePreviewViewModel.swift */; };
+		7D7AA37D25257BC800533E8E /* ViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA37C25257BC800533E8E /* ViewModelConfigurable.swift */; };
 		7DE9684D2524427D009173FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9684C2524427D009173FE /* AppDelegate.swift */; };
 		7DE968512524427D009173FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE968502524427D009173FE /* ViewController.swift */; };
 		7DE968562524427F009173FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE968552524427F009173FE /* Assets.xcassets */; };
 		7DE968592524427F009173FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE968572524427F009173FE /* LaunchScreen.storyboard */; };
 		7DE968642524427F009173FE /* HealthyLyfeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE968632524427F009173FE /* HealthyLyfeTests.swift */; };
-		7DE9686F2524427F009173FE /* HealthyLyfeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9686E2524427F009173FE /* HealthyLyfeUITests.swift */; };
 		7DE9689625244586009173FE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9689525244586009173FE /* DataService.swift */; };
-		A1EF550F940989A285F07DC1 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FF078ABD83B5CFA7976056 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7DE968602524427F009173FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7DE968412524427D009173FE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DE968482524427D009173FE;
-			remoteInfo = HealthyLyfe;
-		};
-		7DE9686B2524427F009173FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7DE968412524427D009173FE /* Project object */;
 			proxyType = 1;
@@ -40,7 +36,12 @@
 		0908F52F2BA691F33B42346A /* Pods_HealthyLyfeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		648C90C638842D41FA7E6EBA /* Pods-HealthyLyfeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfeTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLyfeTests/Pods-HealthyLyfeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4C9610A869CFDDFCF9B7DD /* Pods_HealthyLyfe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4E8763252582560013A3E5 /* UIColor+HealthyLyfe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HealthyLyfe.swift"; sourceTree = "<group>"; };
+		7D4E8767252588740013A3E5 /* CGFloat+HealthyLyfe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+HealthyLyfe.swift"; sourceTree = "<group>"; };
 		7D4FC65769A0458E820937C7 /* Pods-HealthyLyfe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe.release.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe.release.xcconfig"; sourceTree = "<group>"; };
+		7D7AA36925257A7500533E8E /* ArticlePreviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePreviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D7AA37225257B2A00533E8E /* ArticlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePreviewViewModel.swift; sourceTree = "<group>"; };
+		7D7AA37C25257BC800533E8E /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
 		7DE968492524427D009173FE /* HealthyLyfe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLyfe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE9684C2524427D009173FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE968502524427D009173FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,9 +51,6 @@
 		7DE9685F2524427F009173FE /* HealthyLyfeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyLyfeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE968632524427F009173FE /* HealthyLyfeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLyfeTests.swift; sourceTree = "<group>"; };
 		7DE968652524427F009173FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DE9686A2524427F009173FE /* HealthyLyfeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyLyfeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DE9686E2524427F009173FE /* HealthyLyfeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyLyfeUITests.swift; sourceTree = "<group>"; };
-		7DE968702524427F009173FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DE9689525244586009173FE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		83FF078ABD83B5CFA7976056 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfe_HealthyLyfeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A1F73CCEB3699B058AD3DA /* Pods-HealthyLyfe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,14 +76,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DE968672524427F009173FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1EF550F940989A285F07DC1 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,12 +89,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D4E87622525824D0013A3E5 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				7D4E8763252582560013A3E5 /* UIColor+HealthyLyfe.swift */,
+				7D4E8767252588740013A3E5 /* CGFloat+HealthyLyfe.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		7D4E876B252589390013A3E5 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				7D7AA36825257A5700533E8E /* articles */,
+				7D7AA367252579FB00533E8E /* home */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		7D4E876C252589560013A3E5 /* tags */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tags;
+			sourceTree = "<group>";
+		};
+		7D7AA367252579FB00533E8E /* home */ = {
+			isa = PBXGroup;
+			children = (
+				7D4E876C252589560013A3E5 /* tags */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		7D7AA36825257A5700533E8E /* articles */ = {
+			isa = PBXGroup;
+			children = (
+				7D7AA37125257B1800533E8E /* cell */,
+			);
+			path = articles;
+			sourceTree = "<group>";
+		};
+		7D7AA37125257B1800533E8E /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				7D7AA36925257A7500533E8E /* ArticlePreviewCollectionViewCell.swift */,
+				7D7AA37225257B2A00533E8E /* ArticlePreviewViewModel.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		7D7AA37B25257BC300533E8E /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				7D7AA37C25257BC800533E8E /* ViewModelConfigurable.swift */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
 		7DE968402524427D009173FE = {
 			isa = PBXGroup;
 			children = (
 				7DE9684B2524427D009173FE /* HealthyLyfe */,
 				7DE968622524427F009173FE /* HealthyLyfeTests */,
-				7DE9686D2524427F009173FE /* HealthyLyfeUITests */,
 				7DE9684A2524427D009173FE /* Products */,
 				9145504A6867D4C716B31C03 /* Pods */,
 				2F01D7361716F6CF05E4D45D /* Frameworks */,
@@ -116,7 +163,6 @@
 			children = (
 				7DE968492524427D009173FE /* HealthyLyfe.app */,
 				7DE9685F2524427F009173FE /* HealthyLyfeTests.xctest */,
-				7DE9686A2524427F009173FE /* HealthyLyfeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +170,9 @@
 		7DE9684B2524427D009173FE /* HealthyLyfe */ = {
 			isa = PBXGroup;
 			children = (
+				7D4E876B252589390013A3E5 /* screens */,
+				7D4E87622525824D0013A3E5 /* ui */,
+				7D7AA37B25257BC300533E8E /* interface */,
 				7DE9689425244563009173FE /* network */,
 				7DE9684C2524427D009173FE /* AppDelegate.swift */,
 				7DE968502524427D009173FE /* ViewController.swift */,
@@ -141,15 +190,6 @@
 				7DE968652524427F009173FE /* Info.plist */,
 			);
 			path = HealthyLyfeTests;
-			sourceTree = "<group>";
-		};
-		7DE9686D2524427F009173FE /* HealthyLyfeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7DE9686E2524427F009173FE /* HealthyLyfeUITests.swift */,
-				7DE968702524427F009173FE /* Info.plist */,
-			);
-			path = HealthyLyfeUITests;
 			sourceTree = "<group>";
 		};
 		7DE9689425244563009173FE /* network */ = {
@@ -214,26 +254,6 @@
 			productReference = 7DE9685F2524427F009173FE /* HealthyLyfeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7DE968692524427F009173FE /* HealthyLyfeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DE968792524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfeUITests" */;
-			buildPhases = (
-				1B10157B718F502D060438E3 /* [CP] Check Pods Manifest.lock */,
-				7DE968662524427F009173FE /* Sources */,
-				7DE968672524427F009173FE /* Frameworks */,
-				7DE968682524427F009173FE /* Resources */,
-				B38F5F2E427163574E82ACAD /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DE9686C2524427F009173FE /* PBXTargetDependency */,
-			);
-			name = HealthyLyfeUITests;
-			productName = HealthyLyfeUITests;
-			productReference = 7DE9686A2524427F009173FE /* HealthyLyfeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,10 +267,6 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					7DE9685E2524427F009173FE = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 7DE968482524427D009173FE;
-					};
-					7DE968692524427F009173FE = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = 7DE968482524427D009173FE;
 					};
@@ -271,7 +287,6 @@
 			targets = (
 				7DE968482524427D009173FE /* HealthyLyfe */,
 				7DE9685E2524427F009173FE /* HealthyLyfeTests */,
-				7DE968692524427F009173FE /* HealthyLyfeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,13 +302,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7DE9685D2524427F009173FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DE968682524427F009173FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,45 +331,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B10157B718F502D060438E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HealthyLyfe-HealthyLyfeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B38F5F2E427163574E82ACAD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5A9295CA77678796D0A4F8D /* [CP] Check Pods Manifest.lock */ = {
@@ -411,8 +380,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DE9689625244586009173FE /* DataService.swift in Sources */,
+				7D7AA36A25257A7500533E8E /* ArticlePreviewCollectionViewCell.swift in Sources */,
 				7DE968512524427D009173FE /* ViewController.swift in Sources */,
+				7D7AA37325257B2A00533E8E /* ArticlePreviewViewModel.swift in Sources */,
 				7DE9684D2524427D009173FE /* AppDelegate.swift in Sources */,
+				7D7AA37D25257BC800533E8E /* ViewModelConfigurable.swift in Sources */,
+				7D4E8768252588740013A3E5 /* CGFloat+HealthyLyfe.swift in Sources */,
+				7D4E8764252582560013A3E5 /* UIColor+HealthyLyfe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,14 +398,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DE968662524427F009173FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DE9686F2524427F009173FE /* HealthyLyfeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -439,11 +405,6 @@
 			isa = PBXTargetDependency;
 			target = 7DE968482524427D009173FE /* HealthyLyfe */;
 			targetProxy = 7DE968602524427F009173FE /* PBXContainerItemProxy */;
-		};
-		7DE9686C2524427F009173FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DE968482524427D009173FE /* HealthyLyfe */;
-			targetProxy = 7DE9686B2524427F009173FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -661,48 +622,6 @@
 			};
 			name = Release;
 		};
-		7DE9687A2524427F009173FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D671726347BC617C4661A60B /* Pods-HealthyLyfe-HealthyLyfeUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3TC988K6YG;
-				INFOPLIST_FILE = HealthyLyfeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HealthyLyfe;
-			};
-			name = Debug;
-		};
-		7DE9687B2524427F009173FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA1C819EE20A314530742C19 /* Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3TC988K6YG;
-				INFOPLIST_FILE = HealthyLyfeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dawidskiba.HealthyLyfeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HealthyLyfe;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -729,15 +648,6 @@
 			buildConfigurations = (
 				7DE968772524427F009173FE /* Debug */,
 				7DE968782524427F009173FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DE968792524427F009173FE /* Build configuration list for PBXNativeTarget "HealthyLyfeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DE9687A2524427F009173FE /* Debug */,
-				7DE9687B2524427F009173FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
