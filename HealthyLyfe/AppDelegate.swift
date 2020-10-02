@@ -16,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let homeViewController = HomeViewController()
         let mainWindow = UIWindow(frame: UIScreen.main.bounds)
-        mainWindow.backgroundColor = UIColor.white
-        mainWindow.rootViewController = UINavigationController(rootViewController: homeViewController)
+        mainWindow.backgroundColor = .appBackground
+        UINavigationBar.appearance().barTintColor = .appBackground
+        let navigationController = UINavigationController(rootViewController: homeViewController)
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        mainWindow.rootViewController = navigationController
 
         window = mainWindow
         window?.makeKeyAndVisible()

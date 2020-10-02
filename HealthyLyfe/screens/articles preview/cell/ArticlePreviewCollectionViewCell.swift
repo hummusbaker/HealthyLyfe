@@ -56,7 +56,7 @@ extension ArticlePreviewCollectionViewCell : ViewModelConfigurable {
 private extension ArticlePreviewCollectionViewCell {
 
     func setUp() {
-        backgroundColor = .pageBackground
+        backgroundColor = .appBackground
         clipsToBounds = true
         layer.cornerRadius = .cornerRadius
 

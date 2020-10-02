@@ -25,7 +25,7 @@ extension ArticleSubject {
         case .therapy:
             return .appOrange
         case .naturalRemedies:
-            return .appRed
+            return .appTeal
         }
     }
 }

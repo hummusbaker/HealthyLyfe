@@ -8,12 +8,42 @@
 import Foundation
 import Alamofire
 
-private let nytApiKey = "053d62cf-a59a-49a7-b920-09e25c26e9c5"
-
 final class DataService {
 
+    func get<Response: Decodable>(for path: String, request: Encodable?, complete: @escaping (NetworkResponse<Response, String>) -> Void) {
+        guard let url = URL(string: path) else {
+            return complete(.error(internalErrorMessage("invalid url request")))
+        }
+
+        AF.request(url, method: .get, parameters: request?.dictionary).response { response in
+            if let error = response.error {
+                return complete(.error(error.localizedDescription))
+            }
+
+            guard let data = response.data else {
+                return complete(.error(internalErrorMessage("no data")))
+            }
+
+            do {
+//                let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+//                print(json)
+                let response = try JSONDecoder().decode(Response.self, from: data)
+                complete(.success(response))
+            } catch {
+                complete(.error(internalErrorMessage("invalid response type")))
+            }
+        }
+    }
+}
+
+private extension Encodable {
+
+    var dictionary: [String: Any]? {
+        guard let data = try? JSONEncoder().encode(self) else { return nil }
+        return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] }
+    }
 }
 
 private func internalErrorMessage(_ message: String) -> String {
-    return "(╯ರ ~ ರ）╯︵ [internal] - \(message)"
+    return "(╯ರ ~ ರ）╯︵ [data service error] - \(message)"
 }

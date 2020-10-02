@@ -29,7 +29,7 @@ extension UIColor {
         UIColor(named: "appTeal") ?? .purple
     }
 
-    static var pageBackground: UIColor {
+    static var appBackground: UIColor {
         UIColor(named: "pageBackground") ?? .white
     }
 }
