@@ -13,6 +13,8 @@ class ArticlePreviewCollectionViewCell: UICollectionViewCell {
 
     typealias ViewModel = ArticlePreviewViewModel
 
+    static var reuseIdentifier = String(describing: ArticlePreviewCollectionViewCell.self)
+
     private let imageView = UIImageView()
     private let detailContentView = UIView()
     private let titleLabel = UILabel()
@@ -56,12 +58,12 @@ extension ArticlePreviewCollectionViewCell : ViewModelConfigurable {
 private extension ArticlePreviewCollectionViewCell {
 
     func setUp() {
-        backgroundColor = .appBackground
+        backgroundColor = .white
         clipsToBounds = true
         layer.cornerRadius = .cornerRadius
 
         contentView.addSubview(imageView)
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -74,14 +76,16 @@ private extension ArticlePreviewCollectionViewCell {
         detailContentView.addSubview(dateLabel)
         dateLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
         dateLabel.numberOfLines = 1
+        dateLabel.textColor = .white
         dateLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(8)
+            make.top.equalToSuperview().offset(4)
             make.right.equalToSuperview().inset(16)
             make.left.greaterThanOrEqualToSuperview().offset(16)
         }
 
         detailContentView.addSubview(titleLabel)
-        titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
+        titleLabel.textColor = .white
         titleLabel.numberOfLines = 2
         titleLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(16)

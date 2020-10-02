@@ -45,5 +45,5 @@ private extension Encodable {
 }
 
 private func internalErrorMessage(_ message: String) -> String {
-    return "(╯ರ ~ ರ）╯︵ [data service error] - \(message)"
+    return "Ooops. something wrong happened [\(message)]"
 }

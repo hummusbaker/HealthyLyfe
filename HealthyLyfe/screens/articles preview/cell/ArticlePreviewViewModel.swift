@@ -20,4 +20,13 @@ struct ArticlePreviewViewModel {
         self.dateString = dateString
         self.imageUrl = imageUrl
     }
+
+    init(article: Article, tintColor: UIColor) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        self.init(title: article.title,
+                  tintColor: tintColor,
+                  dateString: article.date.map { dateFormatter.string(from: $0) },
+                  imageUrl: article.imageUrl)
+    }
 }

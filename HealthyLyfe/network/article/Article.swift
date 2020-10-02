@@ -30,7 +30,7 @@ struct Article: Decodable {
 
         let mediaArray = try container.decode([Media].self, forKey: .media)
         let desiredMedia = mediaArray.first(where: { $0.subtype == "blog480" })
-        imageUrl = desiredMedia?.url
+        imageUrl = desiredMedia?.actualUrl
 
         let headline = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .headline)
         title = try headline.decode(String.self, forKey: .title)
@@ -48,4 +48,8 @@ private struct Media: Decodable {
 
     let subtype: String
     let url: URL
+
+    var actualUrl: URL? {
+        URL(string: "https://www.nytimes.com/\(url.absoluteString)")
+    }
 }

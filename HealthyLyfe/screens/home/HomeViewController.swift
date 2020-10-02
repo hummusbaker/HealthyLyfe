@@ -15,24 +15,26 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         setUp()
-
-//        DataService().fetchAdviceBooks { result in
-//            switch result {
-//            case .success(let response):
-//                print(response)
-//            case .error(let errorMessage):
-//                print(errorMessage)
-//            }
-//        }
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+        configureNavigtionBarTint(with: .appRed)
+    }
+
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+//            self?.showBrowseArticle(for: .vegan)
+//        }
+//    }
 }
 
 private extension HomeViewController {
 
     func setUp() {
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.appRed]
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.appRed]
+        navigationItem.backButtonTitle = ""
 
         view.backgroundColor = .appBackground
         title = "Healthy Lyfe"
@@ -42,5 +44,13 @@ private extension HomeViewController {
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+
+    func showBrowseArticle(for subject: ArticleSubject) {
+        guard let navigationController = navigationController else {
+            return
+        }
+
+        BrowseArticleWireframe(dataService: DataService(), articleSubject: subject).push(on: navigationController)
     }
 }
