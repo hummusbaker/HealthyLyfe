@@ -29,6 +29,10 @@
 		7DF8B907252789050081F057 /* DataService+ArticleFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8B906252789050081F057 /* DataService+ArticleFetching.swift */; };
 		7DF8B90B252789410081F057 /* ArticleSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8B90A252789410081F057 /* ArticleSearchRequest.swift */; };
 		7DF8B91825279E880081F057 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8B91725279E880081F057 /* Article.swift */; };
+		7DF8B9262527AF230081F057 /* AdviceBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8B9252527AF230081F057 /* AdviceBookResponse.swift */; };
+		7DF8B92C2527AF2E0081F057 /* AdviceBookFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8B92B2527AF2E0081F057 /* AdviceBookFetching.swift */; };
+		7DF8B9322527AF400081F057 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8B9312527AF400081F057 /* Book.swift */; };
+		7DF8B9362527AF840081F057 /* DataService+AdviceBookFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8B9352527AF840081F057 /* DataService+AdviceBookFetching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		7DF8B906252789050081F057 /* DataService+ArticleFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataService+ArticleFetching.swift"; sourceTree = "<group>"; };
 		7DF8B90A252789410081F057 /* ArticleSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSearchRequest.swift; sourceTree = "<group>"; };
 		7DF8B91725279E880081F057 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		7DF8B9252527AF230081F057 /* AdviceBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceBookResponse.swift; sourceTree = "<group>"; };
+		7DF8B92B2527AF2E0081F057 /* AdviceBookFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceBookFetching.swift; sourceTree = "<group>"; };
+		7DF8B9312527AF400081F057 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		7DF8B9352527AF840081F057 /* DataService+AdviceBookFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataService+AdviceBookFetching.swift"; sourceTree = "<group>"; };
 		83FF078ABD83B5CFA7976056 /* Pods_HealthyLyfe_HealthyLyfeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLyfe_HealthyLyfeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A1F73CCEB3699B058AD3DA /* Pods-HealthyLyfe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe/Pods-HealthyLyfe.debug.xcconfig"; sourceTree = "<group>"; };
 		BA1C819EE20A314530742C19 /* Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthyLyfe-HealthyLyfeUITests/Pods-HealthyLyfe-HealthyLyfeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 		7D4E87622525824D0013A3E5 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				7D7AA37C25257BC800533E8E /* ViewModelConfigurable.swift */,
 				7D4E8763252582560013A3E5 /* UIColor+HealthyLyfe.swift */,
 				7D4E8767252588740013A3E5 /* CGFloat+HealthyLyfe.swift */,
 			);
@@ -173,14 +182,6 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
-		7D7AA37B25257BC300533E8E /* ui interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				7D7AA37C25257BC800533E8E /* ViewModelConfigurable.swift */,
-			);
-			path = "ui interfaces";
-			sourceTree = "<group>";
-		};
 		7DE968402524427D009173FE = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +207,6 @@
 			children = (
 				7D4E876B252589390013A3E5 /* screens */,
 				7D4E87622525824D0013A3E5 /* ui */,
-				7D7AA37B25257BC300533E8E /* ui interfaces */,
 				7DE9689425244563009173FE /* network */,
 				7DE9684C2524427D009173FE /* AppDelegate.swift */,
 				7DE968552524427F009173FE /* Assets.xcassets */,
@@ -228,11 +228,23 @@
 		7DE9689425244563009173FE /* network */ = {
 			isa = PBXGroup;
 			children = (
+				7DF8B9242527AF170081F057 /* book */,
 				7D4E878A2526D67B0013A3E5 /* article */,
 				7DE9689525244586009173FE /* DataService.swift */,
 				7DF8B902252787C60081F057 /* NetworkResponse.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		7DF8B9242527AF170081F057 /* book */ = {
+			isa = PBXGroup;
+			children = (
+				7DF8B9252527AF230081F057 /* AdviceBookResponse.swift */,
+				7DF8B9312527AF400081F057 /* Book.swift */,
+				7DF8B92B2527AF2E0081F057 /* AdviceBookFetching.swift */,
+				7DF8B9352527AF840081F057 /* DataService+AdviceBookFetching.swift */,
+			);
+			path = book;
 			sourceTree = "<group>";
 		};
 		9145504A6867D4C716B31C03 /* Pods */ = {
@@ -419,8 +431,11 @@
 				7D7AA36A25257A7500533E8E /* ArticlePreviewCollectionViewCell.swift in Sources */,
 				7DE968512524427D009173FE /* HomeViewController.swift in Sources */,
 				7D4E876E2525897E0013A3E5 /* TagTableViewCell.swift in Sources */,
+				7DF8B9262527AF230081F057 /* AdviceBookResponse.swift in Sources */,
 				7D4E87922526D9E50013A3E5 /* ArticleResponse.swift in Sources */,
 				7D7AA37325257B2A00533E8E /* ArticlePreviewViewModel.swift in Sources */,
+				7DF8B9362527AF840081F057 /* DataService+AdviceBookFetching.swift in Sources */,
+				7DF8B9322527AF400081F057 /* Book.swift in Sources */,
 				7D4E87722525898C0013A3E5 /* TagViewModel.swift in Sources */,
 				7DF8B907252789050081F057 /* DataService+ArticleFetching.swift in Sources */,
 				7DE9684D2524427D009173FE /* AppDelegate.swift in Sources */,
@@ -430,6 +445,7 @@
 				7D4E8768252588740013A3E5 /* CGFloat+HealthyLyfe.swift in Sources */,
 				7DF8B91825279E880081F057 /* Article.swift in Sources */,
 				7D4E8764252582560013A3E5 /* UIColor+HealthyLyfe.swift in Sources */,
+				7DF8B92C2527AF2E0081F057 /* AdviceBookFetching.swift in Sources */,
 				7D4E877A252596B20013A3E5 /* ArticleSubject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,6 @@
 
 import Foundation
 
-private let k_nytApiKey = "4A3gglpILt8Ish7p8o4tnCEO1VZgiMZE"
-
 struct ArticleSearchRequest: Encodable {
 
     enum CodingKeys: String, CodingKey {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ArticleResponse: Decodable  {
+struct ArticleResponse: Decodable  {
 
     let articles: [Article]
 
@@ -16,7 +16,7 @@ class ArticleResponse: Decodable  {
         case articles = "docs"
     }
 
-    required init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let response = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .response)
         articles = try response.decode([Article].self, forKey: .articles)

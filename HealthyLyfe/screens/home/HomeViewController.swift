@@ -16,14 +16,14 @@ class HomeViewController: UIViewController {
 
         setUp()
 
-        DataService().fetchArticles(for: "vegan") { result in
-            switch result {
-            case .success(let response):
-                print(response)
-            case .error(let errorMessage):
-                print(errorMessage)
-            }
-        }
+//        DataService().fetchAdviceBooks { result in
+//            switch result {
+//            case .success(let response):
+//                print(response)
+//            case .error(let errorMessage):
+//                print(errorMessage)
+//            }
+//        }
     }
 }
 
