@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol BrowseArticleUserInterface: class {
+protocol BrowseArticleUserInterface: class, PopAlertViewPresenting {
     func configure(with viewModel: BrowseArticleViewModel)
 }
 
@@ -25,7 +25,7 @@ protocol BrowseArticleInteractorOutput: class {
     func didFailToFetchArticles(message: String)
 }
 
-protocol BrowseArticleWireframeInterface {
+protocol BrowseArticleWireframeInterface: class {
     func showWebview(for url: URL)
     func dismiss()
 }

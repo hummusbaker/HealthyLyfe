@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let homeViewController = HomeViewController()
+        let homeWireframe = HomeWireframe(dataService: DataService())
+        let homeViewController = homeWireframe.createViewController()
         let mainWindow = UIWindow(frame: UIScreen.main.bounds)
         mainWindow.backgroundColor = .appBackground
         UINavigationBar.appearance().barTintColor = .appBackground

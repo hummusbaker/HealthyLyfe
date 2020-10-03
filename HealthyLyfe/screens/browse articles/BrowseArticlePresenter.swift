@@ -43,6 +43,8 @@ extension BrowseArticlePresenter: BrowseArticleInteractorOutput {
     }
 
     func didFailToFetchArticles(message: String) {
-        // TODO
+        userInterface.errorPopViewAlert(with: message) { [weak wireframe] in
+            wireframe?.dismiss()
+        }
     }
 }

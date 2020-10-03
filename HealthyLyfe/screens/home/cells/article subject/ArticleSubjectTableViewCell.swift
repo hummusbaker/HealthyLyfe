@@ -1,5 +1,5 @@
 //
-//  TagTableViewCell.swift
+//  ArticleSubjectTableViewCell.swift
 //  HealthyLyfe
 //
 //  Created by Dawid Skiba on 9/30/20.
@@ -8,9 +8,11 @@
 import UIKit
 import SnapKit
 
-class TagTableViewCell: UITableViewCell {
+class ArticleSubjectTableViewCell: UITableViewCell {
 
-    typealias ViewModel = TagViewModel
+    typealias ViewModel = ArticleSubjectViewModel
+
+    static var reuseIdentifier = String(describing: ArticleSubjectTableViewCell.self)
 
     private let titleLabel = UILabel()
 
@@ -25,7 +27,7 @@ class TagTableViewCell: UITableViewCell {
     }
 }
 
-extension TagTableViewCell : ViewModelConfigurable {
+extension ArticleSubjectTableViewCell : ViewModelConfigurable {
 
     func configure(with viewModel: ViewModel) {
         titleLabel.text = viewModel.title
@@ -33,14 +35,14 @@ extension TagTableViewCell : ViewModelConfigurable {
     }
 }
 
-private extension TagTableViewCell {
+private extension ArticleSubjectTableViewCell {
 
     func setUp() {
         backgroundColor = .clear
 
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         contentView.addSubview(titleLabel)
-        let edgeInset = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+        let edgeInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         titleLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(edgeInset)
         }

@@ -10,7 +10,7 @@ import Alamofire
 
 let k_nytApiKey = "4A3gglpILt8Ish7p8o4tnCEO1VZgiMZE"
 
-final class DataService {
+final class DataService: DataServiceInterface {
 
     func get<Response: Decodable>(for path: String, request: Encodable?, complete: @escaping (NetworkResponse<Response, String>) -> Void) {
         guard let url = URL(string: path) else {

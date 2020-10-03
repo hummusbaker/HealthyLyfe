@@ -10,10 +10,8 @@ import Foundation
 struct BookViewModel {
 
     let imageUrl: URL
-    let amazonButtonClosure: (() -> Void)?
 
-    init(imageUrl: URL, amazonButtonClosure: (() -> Void)?) {
+    init(imageUrl: URL) {
         self.imageUrl = imageUrl
-        self.amazonButtonClosure = amazonButtonClosure
     }
 }

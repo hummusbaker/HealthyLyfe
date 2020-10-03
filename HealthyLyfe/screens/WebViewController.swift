@@ -34,6 +34,7 @@ private extension WebViewController {
 
     func setUp() {
         view.addSubview(webView)
+        view.backgroundColor = .appBackground
         webView.allowsBackForwardNavigationGestures = true
         webView.snp.makeConstraints { make in
             make.edges.equalToSuperview()

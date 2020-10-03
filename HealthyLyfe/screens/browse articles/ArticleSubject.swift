@@ -7,11 +7,11 @@
 
 import UIKit
 
-enum ArticleSubject: String {
+enum ArticleSubject: String, CaseIterable {
     case vegan
     case meditation
+    case exercise
     case therapy
-    case naturalRemedies = "natural remedies"
 }
 
 extension ArticleSubject {
@@ -24,7 +24,7 @@ extension ArticleSubject {
             return .appBlue
         case .therapy:
             return .appOrange
-        case .naturalRemedies:
+        case .exercise:
             return .appTeal
         }
     }

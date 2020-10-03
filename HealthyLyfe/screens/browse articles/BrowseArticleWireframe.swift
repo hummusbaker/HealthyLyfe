@@ -1,5 +1,5 @@
 //
-//  BrowseArticleRouter.swift
+//  BrowseArticleWireframe.swift
 //  HealthyLyfe
 //
 //  Created by Dawid Skiba on 10/2/20.
@@ -9,12 +9,12 @@ import UIKit
 
 final class BrowseArticleWireframe {
 
-    weak var viewController: UIViewController?
+    private weak var viewController: UIViewController?
     private var dismissClosure: (() -> Void)?
-    private let dataService: DataService
+    private let dataService: DataServiceInterface
     private let articleSubject: ArticleSubject
 
-    init(dataService: DataService, articleSubject: ArticleSubject) {
+    init(dataService: DataServiceInterface, articleSubject: ArticleSubject) {
         self.dataService = dataService
         self.articleSubject = articleSubject
     }
