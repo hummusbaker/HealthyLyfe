@@ -55,7 +55,7 @@ private extension BookStackTableViewCell {
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
         stackView.spacing = 16.0
-        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        stackView.layoutMargins = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
         stackView.isLayoutMarginsRelativeArrangement = true
 
         scrollView.addSubview(stackView)
