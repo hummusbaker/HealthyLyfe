@@ -1,5 +1,5 @@
 //
-//  ArticleResponse.swift
+//  ArticleSearchResponse.swift
 //  HealthyLyfe
 //
 //  Created by Dawid Skiba on 10/1/20.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArticleResponse: Decodable  {
+struct ArticleSearchResponse: Decodable  {
 
     let articles: [Article]
 

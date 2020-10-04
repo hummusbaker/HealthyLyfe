@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias ArticleResult = NetworkResponse<ArticleResponse, String>
+typealias ArticleResult = NetworkResponse<ArticleSearchResponse, String>
 
 protocol ArticleFetching {
     func fetchArticles(for searchTerm: String, complete: @escaping (ArticleResult) -> Void)
